@@ -1,0 +1,31 @@
+<mvc:View controllerName="ztodolist.controller.View1"  xmlns:form="sap.ui.layout.form"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" class="myBackgroundStyle">
+       <content>
+            <form:SimpleForm id="form" width="30%" class="formClass_1 formClass_2">
+                <HBox id="hbox">
+                    <Input id="inpValue" placeholder="Enter your task here" submit="onSubmit" width="100%" />
+
+                    <!-- <Button id="btnAdd" text="Add Task" press="addTask" width="100%" /> -->
+                </HBox>
+                <Label id="blank2" />
+                <VBox id="vbox" class="vBoxClass" >
+                    <List id="List" headerText="Your Tasks" items="{path: '/ItemSet'}">
+                        <!-- <CustomListItem id="_IDGenCustomListItem1">
+                        <HBox id="_IDGenHBox1">
+                           <Label text="{task}" id="lbl1"/>
+                            <Button id="_IDGenButton1" />
+                            <Button id="_IDGenButton2" icon="sap-icon://BusinessSuiteInAppSymbols/icon-completed" />
+                        </HBox>
+                    </CustomListItem> -->
+                        <InputListItem id="_IDGenInputListItem1" label="{task}" >
+                            <CheckBox id="checkbox" selected="false" select="onChecked" />
+                            <Button id="_IDGenButton2" text="Delete" press="onDelete" />
+                        </InputListItem>
+                    </List>
+                </VBox>
+            </form:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>

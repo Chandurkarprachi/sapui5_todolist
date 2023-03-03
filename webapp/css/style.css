@@ -1,0 +1,44 @@
+
+/*#container-ztodolist---View1--page-cont {
+   
+    background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+}*/
+.myBackgroundStyle{
+    background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+}
+/* 
+#container-ztodolist---View1--vbox1{
+    justify-content: center;
+    margin:30%
+} */
+.vBoxClass{
+    justify-content: center;
+   
+}
+
+/* #container-ztodolist---View1--form{
+    justify-content: auto;
+   margin-top: 5%;
+   margin-left: 35%;
+   margin-right: 35%;
+}
+#container-ztodolist---View1--form--Form{
+    border: 1px solid black;
+} */
+.formClass_1{
+    justify-content: auto;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: aliceblue;
+}
+.formClass_2{
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+#__data10{
+    width:100%
+}
+.CustomStyleClass{
+-webkit-text-fill-color:green;
+}
